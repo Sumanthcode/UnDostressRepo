@@ -40,7 +40,7 @@ public class Base {
 		driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
 	}
 	
-	//@AfterClass
+	@AfterClass
 	public void closeBrowser() {
 		
 		driver.close();
