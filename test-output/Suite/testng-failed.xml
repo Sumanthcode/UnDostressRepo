@@ -3,12 +3,13 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="Test.ValidatePaymentScreen">
+      <class name="Test.ValidateSuccessMessage">
         <methods>
           <include name="intiate"/>
           <include name="validateSuccessMessage"/>
+          <include name="closeBrowser"/>
         </methods>
-      </class> <!-- Test.ValidatePaymentScreen -->
+      </class> <!-- Test.ValidateSuccessMessage -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

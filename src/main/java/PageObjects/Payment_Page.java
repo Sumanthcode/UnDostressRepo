@@ -76,11 +76,6 @@ public class Payment_Page {
 		return tarjetaDropdownRadioButtons;
 	}
 	
-	public void setCardNumber(String num,WebDriver driver) {
-		WebDriverWait wait=new WebDriverWait(driver,5);
-			wait.until(ExpectedConditions.visibilityOf(cardNumberField));
-		cardNumberField.sendKeys(num);
-	}
 	
 	public WebElement getCardNumberField() {
 		
@@ -88,32 +83,18 @@ public class Payment_Page {
 		
 	}
 	
-	public void setMonthField(String num) {
-		 monthField.sendKeys(num);;
-	}
+	
 	
 	public WebElement getMonthField() {
 		 return monthField;
-	}
-	
-	public void setDayField(String num) {
-		 dayField.sendKeys(num);;
 	}
 	
 	public WebElement getDayField() {
 		 return dayField;
 	}
 	
-	public void setCvvField(String num) {
-		 cvvField.sendKeys(num);
-	}
-	
 	public WebElement getCvvField() {
 		 return cvvField;
-	}
-	
-	public void setEmailField(String email) {
-		 emailField.sendKeys(email);
 	}
 	
 	public WebElement getEmailField() {
@@ -123,18 +104,12 @@ public class Payment_Page {
 	public WebElement getPaySubmit() {
 		return paySubmit;
 	}
-	
-	public void setPopupEmailField(String email) {
-		popupEmailField.sendKeys(email);
-	}
+
 	
 	public WebElement getPopupEmailField() {
 		 return popupEmailField;
 	}
 	
-	public void setPopupPasswordField(String pwd) {
-		popupPasswordField.sendKeys(pwd);
-	}
 	
 	public WebElement getPopupPasswordField() {
 		 return popupPasswordField;

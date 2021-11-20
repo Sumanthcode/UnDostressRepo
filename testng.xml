@@ -4,6 +4,7 @@
   <test name="Test">
     <classes>
       <class name="Test.ValidatePaymentScreen"/>
+      <class name="Test.ValidateSuccessMessage"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

@@ -1,9 +1,6 @@
 package Test;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -12,13 +9,12 @@ import Generic.Base;
 import PageObjects.Payment_Page;
 import PageObjects.Signiete_Page;
 
-public class ValidatePaymentScreen extends Base {
-	
-	Payment_Page p;
+public class ValidateSuccessMessage extends Base{
 	ActionUtility a;
-	@Test(priority=1)
-	public void validatePaymentScreen() {
-		
+	Payment_Page p;
+	@Test
+	public void validateSuccessMessage() throws InterruptedException {
+	
 		Signiete_Page s=new Signiete_Page(driver);
 		a=new ActionUtility();
 		a.click(s.getOperatorField());//click on operator field
@@ -26,14 +22,8 @@ public class ValidatePaymentScreen extends Base {
 		a.setText(s.getMobileNumberField(),"8465433546");// Enter the mobile number
 		a.click(s.getMontdeRecargaField());//click on Mont de Recarga field
 		a.click(s.getmontdeRecargaFieldSuggesions());// select the any options from the list
-		a.click(s.getSiguiente());//click on siguiente option
+		a.click(s.getSiguiente());
 		p=new Payment_Page(driver);
-		Assert.assertTrue(a.validatePageHeaderTitle(p.getPaymentPageTitle(), "Resumen de la compra",driver));// verify the payment page 
-	}
-	
-/*	@Test(priority=2)
-	public void validateSuccessMessage() throws InterruptedException {
-	
 		a.click(p.getTarjeta());//click on Tarjeta
 		Thread.sleep(2000);// wait for 2 sec
 		a.click(p.getTarjetaDropdownRadioButtons().get(0));//select the “Usar nueva tarjeta” radio button
@@ -53,6 +43,7 @@ public class ValidatePaymentScreen extends Base {
 		a.click(p.getPopupSubmit());//click on submit within the popup
 		Thread.sleep(2000);
 		Assert.assertTrue(p.getErrorMsg().getText().equals("Tu cuenta ha sido bloqueada por favor restablece tu contraseña"));//verify error message
-	}*/
+	}
+
 
 }

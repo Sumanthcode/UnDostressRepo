@@ -53,12 +53,7 @@ public class Signiete_Page {
 
 	}
 	
-	
-	public void setMobileNumberField(String num) {
-		
-		mobileNumberField.sendKeys(num);
-		
-	}
+
 	
 public WebElement getMobileNumberField() {
 		

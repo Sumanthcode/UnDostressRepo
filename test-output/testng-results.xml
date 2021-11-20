@@ -2,23 +2,37 @@
 <testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-11-20T14:21:08 IST" name="Suite" finished-at="2021-11-20T14:22:09 IST" duration-ms="60738">
+  <suite started-at="2021-11-20T22:02:40 IST" name="Suite" finished-at="2021-11-20T22:04:12 IST" duration-ms="92304">
     <groups>
     </groups>
-    <test started-at="2021-11-20T14:21:08 IST" name="Test" finished-at="2021-11-20T14:22:09 IST" duration-ms="60738">
-      <class name="Test.ValidatePaymentScreen">
-        <test-method is-config="true" signature="intiate()[pri:0, instance:Test.ValidatePaymentScreen@34f5090e]" started-at="2021-11-20T14:21:08 IST" name="intiate" finished-at="2021-11-20T14:21:30 IST" duration-ms="22108" status="PASS">
+    <test started-at="2021-11-20T22:02:40 IST" name="Test" finished-at="2021-11-20T22:04:12 IST" duration-ms="92304">
+      <class name="Test.ValidateSuccessMessage">
+        <test-method is-config="true" signature="intiate()[pri:0, instance:Test.ValidateSuccessMessage@2dde1bff]" started-at="2021-11-20T22:03:28 IST" name="intiate" finished-at="2021-11-20T22:03:42 IST" duration-ms="13297" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- intiate -->
-        <test-method signature="validatePaymentScreen()[pri:1, instance:Test.ValidatePaymentScreen@34f5090e]" started-at="2021-11-20T14:21:30 IST" name="validatePaymentScreen" finished-at="2021-11-20T14:21:58 IST" duration-ms="27994" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validatePaymentScreen -->
-        <test-method signature="validateSuccessMessage()[pri:2, instance:Test.ValidatePaymentScreen@34f5090e]" started-at="2021-11-20T14:21:58 IST" name="validateSuccessMessage" finished-at="2021-11-20T14:22:09 IST" duration-ms="10549" status="PASS">
+        <test-method signature="validateSuccessMessage()[pri:0, instance:Test.ValidateSuccessMessage@2dde1bff]" started-at="2021-11-20T22:03:42 IST" name="validateSuccessMessage" finished-at="2021-11-20T22:04:10 IST" duration-ms="28815" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateSuccessMessage -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:Test.ValidateSuccessMessage@2dde1bff]" started-at="2021-11-20T22:04:10 IST" name="closeBrowser" finished-at="2021-11-20T22:04:12 IST" duration-ms="1414" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- Test.ValidateSuccessMessage -->
+      <class name="Test.ValidatePaymentScreen">
+        <test-method is-config="true" signature="intiate()[pri:0, instance:Test.ValidatePaymentScreen@a2431d0]" started-at="2021-11-20T22:02:40 IST" name="intiate" finished-at="2021-11-20T22:02:55 IST" duration-ms="15342" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- intiate -->
+        <test-method signature="validatePaymentScreen()[pri:1, instance:Test.ValidatePaymentScreen@a2431d0]" started-at="2021-11-20T22:02:55 IST" name="validatePaymentScreen" finished-at="2021-11-20T22:03:28 IST" duration-ms="33055" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validatePaymentScreen -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:Test.ValidatePaymentScreen@a2431d0]" started-at="2021-11-20T22:03:28 IST" name="closeBrowser" finished-at="2021-11-20T22:03:28 IST" duration-ms="302" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
       </class> <!-- Test.ValidatePaymentScreen -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
